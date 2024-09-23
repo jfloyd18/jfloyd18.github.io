@@ -43,6 +43,7 @@ nav a:hover {
 }
 
 ul {
+  text-align: left;
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 0;
