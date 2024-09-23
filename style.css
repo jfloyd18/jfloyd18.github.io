@@ -42,6 +42,21 @@ nav a:hover {
   color: #ffdd57;
 }
 
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+ul li {
+  text-align: left;
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+
 section {
   text-align: center;
   padding: 40px;
@@ -52,11 +67,7 @@ section {
   max-width: 1000px;
 }
 
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  line-height: 1.8;
-}
+
 
 .profile-img {
   width: 250px;
