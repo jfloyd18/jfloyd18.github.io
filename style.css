@@ -43,7 +43,7 @@ nav a:hover {
 }
 
 ul {
-  text-align: left;
+  text-align: justify;
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 0;
@@ -51,7 +51,7 @@ ul {
 }
 
 ul li {
-  text-align: left;
+  text-align: justify;
   margin: 10px 0;
   line-height: 1.6;
   font-size: 1.1em;
