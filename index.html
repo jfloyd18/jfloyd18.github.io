@@ -1,77 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css">
-  
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jhan Floyd C. Guides - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>My Online Porfolio</h1>
+    <h1>My Online Portfolio</h1>
     <nav>
-      <a href="#about">About Me</a>
-      <a href="#Favorites">Favorites</a>
-      <a href="#Projects">School Projects</a>
-      <a href="#Talent">Talent</a>
+      <button class="hamburger" aria-label="Toggle menu">
+        ☰
+      </button>
+      <ul class="menu">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#Favorites">Favorites</a></li>
+        <li><a href="#Projects">School Projects</a></li>
+        <li><a href="#Talent">Talent</a></li>
+      </ul>
     </nav>
+    <button id="dark-mode-toggle" class="dark-mode-btn">Toggle Dark Mode</button>
   </header>
 
-      <section id="about">  
-      <img src="prof.jpg" alt="profile pic" class="profile-img">     
-      <h2>About me:</h2>   
-       <p class="intro-text"> I'm Jhan Floyd C. Guides, Currently studying at University of the Immaculate Conception as a 2nd year IT student. </p>
-      </section>
+  <section id="about">
+    <img src="prof.jpg" alt="profile pic" class="profile-img">
+    <h2>About me:</h2>
+    <p class="intro-text">I'm Jhan Floyd C. Guides, Currently studying at University of the Immaculate Conception as a 2nd year IT student.</p>
+  </section>
 
-      <section id="Favorites">
-      <h2>Favorites:</h2>
-      <ul>
-        <li>Computer Games</li>
-        <li>Badminton</li> 
-        <li>Listening to music
-          <ul>
-          <li>  
-          One of my favorite song
-          <br>
-          <audio controls>
-          <source src="song.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-      </audio>
-        </li>
+  <section id="Favorites">
+    <h2>Favorites</h2>
+    <div class="favorites-container">
+      <div class="favorite-category">
+        <h3><span class="icon">🎮</span> Computer Games</h3>
+        <ul>
+          <li>League of Legends</li>
+          <li>Dota 2</li>
+          <li>Valorant</li>
         </ul>
-      </li>
-     
-        <li>Watching movies</li>     
-        <li>Coding</li>
-      </ul>
-      </section>
+      </div>
+      <div class="favorite-category">
+        <h3><span class="icon">🏸</span> Sports</h3>
+        <ul>
+          <li>Badminton</li>
+          <li>Basketball</li>
+          <li>Football</li>
+        </ul>
+      </div>
+      <div class="favorite-category">
+        <h3><span class="icon">🎶</span> Music</h3>
+        <ul>
+          <li>
+            <strong>One of My Favorite Songs</strong>
+            <p>Trust by Brent Faiyaz</p>
+            <div class="audio-player">
+              <audio controls aria-label="Audio player for Trust by Brent Faiyaz">
+                <source src="song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </li>
+          <li>Listening to Rap music</li>
+          <li>RnB music</li>
+        </ul>
+      </div>
+      <div class="favorite-category">
+        <h3><span class="icon">🎥</span> Movies</h3>
+        <ul>
+          <li>Inception</li>
+          <li>The Matrix</li>
+          <li>Avengers: Endgame</li>
+        </ul>
+      </div>
+      <div class="favorite-category">
+        <h3><span class="icon">📚</span> Hobbies</h3>
+        <ul>
+          <li>Coding</li>
+          <li>Reading</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-      <section id="Projects">
-      <h2>School Projects:</h2>   
+  <section id="Projects">
+    <h2>School Projects:</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Enrollment System</h3>
+        <p>Built with Java and database.</p>
+      </div>
+      <div class="card">
+        <h3>Fashion Blog</h3>
+        <p><a href="html/fashionblog/fashionblog.html">View Blog</a></p>
+      </div>
+      <div class="card">
+        <h3>Recipe</h3>
+        <p><a href="recipe/recipe.html">View Recipe</a></p>
+      </div>
+      <div class="card">
+        <h3>Woodruff</h3>
+        <p><a href="woodruff/woodruff.html">View Project</a></p>
+      </div>
+    </div>
+  </section>
       
-       <p> We made an enrollment system as our final project using java and data bases. </p>
-      
-        <p>Fashion blog activity.</p>
-        
-       <a href="html/fashionblog/fashionblog.html">Link to fashion blog</a>
-       <br>
-       <a href="recipe/recipe.html">Link to recipe</a>
-       <br>
-       <a href="woodruff/woodruff.html">Link to woodruff</a>
-        
+  <section id="Talent">
+    <h2>Talent:</h2>    
+    <p>I am willing to try and learn new things.</p>
+  </section>
 
-      </section>
+  <footer>
+    <p>© My Online Portfolio | 2024</p>
+  </footer>
 
-      <section id="Talent">
-      <h2>Talent:</h2>    
-       <p> I haven't discovered my talent. </p>
-      </section>
-
-      <footer>
-        <p>© My Online Portfolio | 2024</p>
-      </footer>
-
-       
+  <script src="script.js"></script>
 </body>
 </html>
