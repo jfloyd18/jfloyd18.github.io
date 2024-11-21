@@ -69,6 +69,11 @@ nav {
 }
 
 @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .hamburger {
     display: block;
   }
@@ -77,11 +82,12 @@ nav {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 0;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
+    z-index: 1000;
   }
 
   .menu.active {
@@ -95,14 +101,39 @@ nav {
 
   .menu a {
     color: #333;
+    font-size: 1.2em;
   }
 
   .dark-mode-btn {
-    display: block;
-    margin-top: 10px;
+    margin-top: 20px;
     align-self: center;
   }
+
+  .favorites-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
 }
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .intro-text {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 
 ul {
   text-align: left;
@@ -268,6 +299,7 @@ section.dark-mode {
   padding: 20px;
   border-radius: 8px;
   margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
 #recipe-container h2 {
@@ -288,5 +320,19 @@ section.dark-mode {
 #recipe-container img {
   margin-top: 20px;
   border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  #recipe-container {
+    padding: 15px;
+  }
+
+  #recipe-container h2 {
+    font-size: 1.8em;
+  }
+
+  #recipe-container li {
+    font-size: 1em;
+  }
 }
 
