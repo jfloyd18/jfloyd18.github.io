@@ -1,35 +1,11 @@
-
-const darkModeToggle = document.getElementById('dark-mode-toggle');
-const body = document.body;
-
-
-if (localStorage.getItem('dark-mode') === 'enabled') {
-  body.classList.add('dark-mode');
-  darkModeToggle.textContent = 'Switch to Light Mode';
-}
-
-
-darkModeToggle.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-  
-  
-  if (body.classList.contains('dark-mode')) {
-    darkModeToggle.textContent = 'Switch to Light Mode';
-    localStorage.setItem('dark-mode', 'enabled');
-  } else {
-    darkModeToggle.textContent = 'Switch to Dark Mode';
-    localStorage.setItem('dark-mode', 'disabled');
-  }
-});
-
 function fetchRandomMeal() {
-    const apiKey = "5e3c6de8268b422c81b427907bcd3437"; 
+    const apiKey = "5e3c6de8268b422c81b427907bcd3437"; // Replace with your Spoonacular API key
     const url = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=1`;
   
     fetch(url)
-      .then(response => response.json())  
+      .then(response => response.json())  // Parse the JSON response
       .then(data => {
-        const meal = data.recipes[0]; 
+        const meal = data.recipes[0]; // Get the first random recipe
         const mealContainer = document.querySelector("#meal-container");
   
         mealContainer.innerHTML = `

@@ -1,4 +1,4 @@
-/* Base Styles */
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
@@ -206,6 +206,7 @@ h2 {
   text-decoration: underline;
 }
 
+
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #181818;
@@ -261,4 +262,31 @@ section.dark-mode {
 }
 
 
+/*API RECIPE*/
+#recipe-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#recipe-container h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+#recipe-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#recipe-container li {
+  font-size: 1.2em;
+  color: #555;
+}
+
+#recipe-container img {
+  margin-top: 20px;
+  border-radius: 8px;
+}
 
