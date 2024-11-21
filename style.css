@@ -185,6 +185,9 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 1000px;
 }
 
 .favorite-category {
@@ -192,7 +195,32 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+@media (max-width: 1024px) {
+  .favorites-container {
+    grid-template-columns: 1fr;
+    gap: 15px; 
+    width: 90%; 
+  }
+
+  .favorite-category {
+    padding: 15px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .favorites-container {
+    width: 95%; 
+  }
+
+  .favorite-category {
+    padding: 10px; 
+    font-size: 0.9em; 
+  }
+}
+
 
 .favorite-category h3 {
   font-size: 1.6em;
@@ -241,15 +269,11 @@ h2 {
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #181818;
-  color: #f4f4f4;
+  color: #252525;
 }
 
 header.dark-mode {
   background-color: #222;
-}
-
-header h1 {
-  color: #f4f4f4;
 }
 
 .menu a:hover {
